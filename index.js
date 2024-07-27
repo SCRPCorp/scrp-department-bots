@@ -38,7 +38,7 @@ client.on(Events.MessageCreate, async (message) => {
     } else if (message.content.startsWith('-quota')) {
         if (message.member.roles.cache.has(ROLE_ID)) {
             const embed = new EmbedBuilder()
-                .setTitle('DHS - Quota')
+                .setTitle('DEPNAME - Quota')
                 .setDescription('The quota for DEPNAME is NUMBER hours a week')
                 .setColor('#0099ff');
             message.channel.send({ embeds: [embed] });
